@@ -1,0 +1,16 @@
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\bin\Release\net7.0\Zion1.Client.Application.deps.json
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\bin\Release\net7.0\Zion1.Client.Application.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\bin\Release\net7.0\Zion1.Client.Application.pdb
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\bin\Release\net7.0\Zion1.Client.Domain.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\bin\Release\net7.0\Zion1.Client.Domain.pdb
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.csproj.AssemblyReference.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.AssemblyInfoInputs.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.AssemblyInfo.cs
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.csproj.CoreCompileInputs.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.sourcelink.json
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.csproj.CopyComplete
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\refint\Zion1.Client.Application.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\Zion1.Client.Application.pdb
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.Application\obj\Release\net7.0\ref\Zion1.Client.Application.dll

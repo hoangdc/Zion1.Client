@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Zion1.Client.UI.props" />
+</Project>

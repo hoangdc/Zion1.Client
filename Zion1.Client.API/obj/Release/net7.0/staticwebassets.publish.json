@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oTw+EoQI8XpcUHAqIKsY0PE12T6U/bZHjG5y8oCUSmY=",
+  "Source": "ZionConnect.Client.API",
+  "BasePath": "_content/ZionConnect.Client.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

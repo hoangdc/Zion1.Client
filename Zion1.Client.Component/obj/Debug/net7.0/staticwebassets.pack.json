@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\_Hoang\\Source\\Repos\\Zion1\\Zion1.Client\\Zion1.Client.Component\\wwwroot\\background.png",
+      "PackagePath": "staticwebassets\\background.png"
+    },
+    {
+      "Id": "C:\\_Hoang\\Source\\Repos\\Zion1\\Zion1.Client\\Zion1.Client.Component\\wwwroot\\exampleJsInterop.js",
+      "PackagePath": "staticwebassets\\exampleJsInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Zion1.Client.Component.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Zion1.Client.Component.props",
+      "PackagePath": "build\\Zion1.Client.Component.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Zion1.Client.Component.props",
+      "PackagePath": "buildMultiTargeting\\Zion1.Client.Component.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Zion1.Client.Component.props",
+      "PackagePath": "buildTransitive\\Zion1.Client.Component.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
