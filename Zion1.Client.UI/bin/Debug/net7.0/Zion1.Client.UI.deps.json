@@ -12,7 +12,8 @@
           "Newtonsoft.Json": "9.0.1",
           "Telerik.UI.for.Blazor": "4.4.0",
           "Zion1.Client.Application": "1.0.0",
-          "Zion1.Client.Domain": "1.0.0"
+          "Zion1.Client.Domain": "1.0.0",
+          "Zion1.Common.API": "1.0.0"
         },
         "runtime": {
           "Zion1.Client.UI.dll": {}
@@ -1041,29 +1042,21 @@
           }
         }
       },
-      "Zion1.Common/1.0.0": {
+      "Zion1.Common.API/1.0.0": {
         "runtime": {
           "lib/net7.0/Zion1.Common.API.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/net7.0/Zion1.Common.Application.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/net7.0/Zion1.Common.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           },
           "lib/net7.0/Zion1.Common.Helper.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
-          },
-          "lib/net7.0/Zion1.Common.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          },
-          "lib/net7.0/Zion1.Common.UI.dll": {
+          }
+        }
+      },
+      "Zion1.Common.Application/1.0.0": {
+        "runtime": {
+          "lib/net7.0/Zion1.Common.Application.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1075,7 +1068,7 @@
           "FluentValidation": "11.7.1",
           "MediatR": "12.1.1",
           "Zion1.Client.Domain": "1.0.0",
-          "Zion1.Common": "1.0.0"
+          "Zion1.Common.Application": "1.0.0"
         },
         "runtime": {
           "Zion1.Client.Application.dll": {}
@@ -1843,12 +1836,19 @@
       "path": "telerik.zip/2023.2.713",
       "hashPath": "telerik.zip.2023.2.713.nupkg.sha512"
     },
-    "Zion1.Common/1.0.0": {
+    "Zion1.Common.API/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RlVRCgptmy39vfDHy3KBcMre0i91DA4GB48pzPnTOp+Na7KkqvXWeJrC+usOhMeYScYlC879iTV0XuGTveKeCw==",
-      "path": "zion1.common/1.0.0",
-      "hashPath": "zion1.common.1.0.0.nupkg.sha512"
+      "sha512": "sha512-9sl0QnG7UIFLquFAxWGC6SzTjGInkCTWIo6WkyCjxzd72/2lOYaFqy2C7rvY51CHBQqzTxbQMB6UpIohy7Eskg==",
+      "path": "zion1.common.api/1.0.0",
+      "hashPath": "zion1.common.api.1.0.0.nupkg.sha512"
+    },
+    "Zion1.Common.Application/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ATymXZ7OwWRrL1IHKG0BcZNU6avCPj5AL/Y7Ps0nLpzep25aLs7T4Dy7IyT5u1B+Qwcz1C11pGzc0YkhXmbhQg==",
+      "path": "zion1.common.application/1.0.0",
+      "hashPath": "zion1.common.application.1.0.0.nupkg.sha512"
     },
     "Zion1.Client.Application/1.0.0": {
       "type": "project",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "w0is9JZbjce0ZQQr1xmAkbmN1863Qr2c/B/dnyUbUGgm6TdLxsgV50QpWGPbNOuTTV/4zqCH6Znj5Uu07GiJsA==",
+  "dgSpecHash": "StGlakavATADUhvi9XBOpEylh0KMEOY+trFrfo7knuPrKkK/gycL2srZ+65LelUSzCDdz7PQqgT/14zzPeZVkA==",
   "success": true,
   "projectFilePath": "C:\\_Hoang\\Source\\Repos\\Zion1\\Zion1.Client\\Zion1.Client.UI\\Zion1.Client.UI.csproj",
   "expectedPackageFiles": [
@@ -111,7 +111,8 @@
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\telerik.svgicons\\1.8.0\\telerik.svgicons.1.8.0.nupkg.sha512",
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\telerik.ui.for.blazor\\4.4.0\\telerik.ui.for.blazor.4.4.0.nupkg.sha512",
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\telerik.zip\\2023.2.713\\telerik.zip.2023.2.713.nupkg.sha512",
-    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common\\1.0.0\\zion1.common.1.0.0.nupkg.sha512"
+    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common.api\\1.0.0\\zion1.common.api.1.0.0.nupkg.sha512",
+    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common.application\\1.0.0\\zion1.common.application.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rYxlwd1aYl1nppyNI/v4Zxc/c7n6IM1enSbS3YuvCRMxZIVUB0nhXuYwkb5oMWQsHte1PKhmNZn11dD9NZrjJA==",
+  "dgSpecHash": "VaOe0PRGnHUxjC4G94e0+Q7R3Jy4RUGt0xrIRSmLwKKOrJ0qzhoLda5tQGWMXxqLmUDYNRrIXwXw/jFAeFxSQw==",
   "success": true,
   "projectFilePath": "C:\\_Hoang\\Source\\Repos\\Zion1\\Zion1.Client\\Zion1.Client.API\\Zion1.Client.API.csproj",
   "expectedPackageFiles": [
@@ -81,7 +81,9 @@
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\hoang.dinh\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512",
-    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common\\1.0.0\\zion1.common.1.0.0.nupkg.sha512"
+    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common.api\\1.0.0\\zion1.common.api.1.0.0.nupkg.sha512",
+    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common.application\\1.0.0\\zion1.common.application.1.0.0.nupkg.sha512",
+    "C:\\Users\\hoang.dinh\\.nuget\\packages\\zion1.common.infrastructure\\1.0.0\\zion1.common.infrastructure.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

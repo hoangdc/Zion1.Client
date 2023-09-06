@@ -65,7 +65,7 @@
               "target": "Package",
               "version": "[12.1.1, )"
             },
-            "Zion1.Common": {
+            "Zion1.Common.Application": {
               "target": "Package",
               "version": "[1.0.0, )"
             }
@@ -217,6 +217,10 @@
             "Telerik.UI.for.Blazor": {
               "target": "Package",
               "version": "[4.4.0, )"
+            },
+            "Zion1.Common.API": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

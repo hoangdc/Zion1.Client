@@ -70,7 +70,7 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
-            "Zion1.Common": {
+            "Zion1.Common.API": {
               "target": "Package",
               "version": "[1.0.0, )"
             }
@@ -159,7 +159,7 @@
               "target": "Package",
               "version": "[12.1.1, )"
             },
-            "Zion1.Common": {
+            "Zion1.Common.Application": {
               "target": "Package",
               "version": "[1.0.0, )"
             }
@@ -317,6 +317,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Zion1.Common.Infrastructure": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

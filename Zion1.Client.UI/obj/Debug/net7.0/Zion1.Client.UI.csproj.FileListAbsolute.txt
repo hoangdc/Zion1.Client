@@ -37,15 +37,6 @@ C:\_Hoang\Source\Repos\Zion1\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.dl
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client.UI\obj\Debug\net7.0\refint\Zion1.Client.UI.dll
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.pdb
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client.UI\obj\Debug\net7.0\ref\Zion1.Client.UI.dll
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.csproj.AssemblyReference.cache
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.GeneratedMSBuildEditorConfig.editorconfig
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.AssemblyInfoInputs.cache
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.AssemblyInfo.cs
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.csproj.CoreCompileInputs.cache
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.sourcelink.json
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.dll
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\refint\Zion1.Client.UI.dll
-C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.pdb
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\ApiSettings.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1.Client.UI.staticwebassets.runtime.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1.Client.UI.deps.json
@@ -55,6 +46,12 @@ C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1.Client.Domain.dll
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1.Client.Application.pdb
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\bin\Debug\net7.0\Zion1.Client.Domain.pdb
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.csproj.AssemblyReference.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.AssemblyInfoInputs.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.AssemblyInfo.cs
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.csproj.CoreCompileInputs.cache
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.sourcelink.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\staticwebassets.build.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\staticwebassets.development.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\staticwebassets\msbuild.Zion1.Client.UI.Microsoft.AspNetCore.StaticWebAssets.props
@@ -64,4 +61,7 @@ C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\stati
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\staticwebassets.pack.json
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\scopedcss\bundle\Zion1.Client.UI.styles.css
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.csproj.CopyComplete
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\refint\Zion1.Client.UI.dll
+C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\Zion1.Client.UI.pdb
 C:\_Hoang\Source\Repos\Zion1\Zion1.Client\Zion1.Client.UI\obj\Debug\net7.0\ref\Zion1.Client.UI.dll

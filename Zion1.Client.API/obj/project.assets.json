@@ -1286,23 +1286,37 @@
           }
         }
       },
-      "Zion1.Common/1.0.0": {
+      "Zion1.Common.API/1.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0/Zion1.Common.API.dll": {},
-          "lib/net7.0/Zion1.Common.Application.dll": {},
-          "lib/net7.0/Zion1.Common.Domain.dll": {},
-          "lib/net7.0/Zion1.Common.Helper.dll": {},
-          "lib/net7.0/Zion1.Common.Infrastructure.dll": {},
-          "lib/net7.0/Zion1.Common.UI.dll": {}
+          "lib/net7.0/Zion1.Common.Helper.dll": {}
         },
         "runtime": {
           "lib/net7.0/Zion1.Common.API.dll": {},
+          "lib/net7.0/Zion1.Common.Helper.dll": {}
+        }
+      },
+      "Zion1.Common.Application/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Zion1.Common.Application.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Zion1.Common.Application.dll": {}
+        }
+      },
+      "Zion1.Common.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
           "lib/net7.0/Zion1.Common.Application.dll": {},
           "lib/net7.0/Zion1.Common.Domain.dll": {},
-          "lib/net7.0/Zion1.Common.Helper.dll": {},
-          "lib/net7.0/Zion1.Common.Infrastructure.dll": {},
-          "lib/net7.0/Zion1.Common.UI.dll": {}
+          "lib/net7.0/Zion1.Common.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/Zion1.Common.Application.dll": {},
+          "lib/net7.0/Zion1.Common.Domain.dll": {},
+          "lib/net7.0/Zion1.Common.Infrastructure.dll": {}
         }
       },
       "Zion1.Client.Application/1.0.0": {
@@ -1313,7 +1327,7 @@
           "FluentValidation": "11.7.1",
           "MediatR": "12.1.1",
           "Zion1.Client.Domain": "1.0.0",
-          "Zion1.Common": "1.0.0"
+          "Zion1.Common.Application": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Zion1.Client.Application.dll": {}
@@ -1340,7 +1354,8 @@
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.9",
           "Zion1.Client.Application": "1.0.0",
-          "Zion1.Client.Domain": "1.0.0"
+          "Zion1.Client.Domain": "1.0.0",
+          "Zion1.Common.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Zion1.Client.Infrastructure.dll": {}
@@ -4063,22 +4078,46 @@
         "version.txt"
       ]
     },
-    "Zion1.Common/1.0.0": {
-      "sha512": "RlVRCgptmy39vfDHy3KBcMre0i91DA4GB48pzPnTOp+Na7KkqvXWeJrC+usOhMeYScYlC879iTV0XuGTveKeCw==",
+    "Zion1.Common.API/1.0.0": {
+      "sha512": "9sl0QnG7UIFLquFAxWGC6SzTjGInkCTWIo6WkyCjxzd72/2lOYaFqy2C7rvY51CHBQqzTxbQMB6UpIohy7Eskg==",
       "type": "package",
-      "path": "zion1.common/1.0.0",
+      "path": "zion1.common.api/1.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "docs/README.md",
         "lib/net7.0/Zion1.Common.API.dll",
+        "lib/net7.0/Zion1.Common.Helper.dll",
+        "zion1.common.api.1.0.0.nupkg.sha512",
+        "zion1.common.api.nuspec"
+      ]
+    },
+    "Zion1.Common.Application/1.0.0": {
+      "sha512": "ATymXZ7OwWRrL1IHKG0BcZNU6avCPj5AL/Y7Ps0nLpzep25aLs7T4Dy7IyT5u1B+Qwcz1C11pGzc0YkhXmbhQg==",
+      "type": "package",
+      "path": "zion1.common.application/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "lib/net7.0/Zion1.Common.Application.dll",
+        "zion1.common.application.1.0.0.nupkg.sha512",
+        "zion1.common.application.nuspec"
+      ]
+    },
+    "Zion1.Common.Infrastructure/1.0.0": {
+      "sha512": "lDJJzPa4TW6Bn38pUKJJPfklOTVpdQ8Vsoq9aLzoniDgCitZDSOh+ys33grBR+Svtf1r259Cj+Z7aGbaK57tqw==",
+      "type": "package",
+      "path": "zion1.common.infrastructure/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
         "lib/net7.0/Zion1.Common.Application.dll",
         "lib/net7.0/Zion1.Common.Domain.dll",
-        "lib/net7.0/Zion1.Common.Helper.dll",
         "lib/net7.0/Zion1.Common.Infrastructure.dll",
-        "lib/net7.0/Zion1.Common.UI.dll",
-        "zion1.common.1.0.0.nupkg.sha512",
-        "zion1.common.nuspec"
+        "zion1.common.infrastructure.1.0.0.nupkg.sha512",
+        "zion1.common.infrastructure.nuspec"
       ]
     },
     "Zion1.Client.Application/1.0.0": {
@@ -4104,7 +4143,7 @@
       "Swashbuckle.AspNetCore >= 6.5.0",
       "Zion1.Client.Application >= 1.0.0",
       "Zion1.Client.Infrastructure >= 1.0.0",
-      "Zion1.Common >= 1.0.0"
+      "Zion1.Common.API >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4177,7 +4216,7 @@
             "target": "Package",
             "version": "[6.5.0, )"
           },
-          "Zion1.Common": {
+          "Zion1.Common.API": {
             "target": "Package",
             "version": "[1.0.0, )"
           }
