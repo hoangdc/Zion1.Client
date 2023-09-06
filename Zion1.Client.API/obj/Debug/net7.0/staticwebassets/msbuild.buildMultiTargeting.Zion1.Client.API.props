@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Zion1.Client.API.props" />
-</Project>
