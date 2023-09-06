@@ -1,0 +1,3 @@
+﻿add-migration Client
+Update-Database
+remove-migration
