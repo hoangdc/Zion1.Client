@@ -1,0 +1,38 @@
+﻿@using Zion1.Client.Web.UI.Models;
+
+<h3>Client List</h3>
+
+
+    <TelerikRootComponent>
+        <TelerikGrid Pageable=true
+                     PageSize="10"
+                     Sortable=true
+                     Data=clientList
+                     EditMode="@GridEditMode.Popup"
+                     OnCreate=@CreateClient
+                     OnUpdate=@UpdateClient
+                     OnDelete=@DeleteClient>
+            <GridToolBarTemplate>
+                <GridCommandButton Command="Add" Icon="@SvgIcon.Plus">Add Client</GridCommandButton>
+            </GridToolBarTemplate>
+            <GridColumns>
+                <GridColumn Field=@nameof(ClientInfoVM.ClientId) Editable="false" />
+                <GridColumn Field=@nameof(ClientInfoVM.ClientName)></GridColumn>
+                <GridColumn Field=@nameof(ClientInfoVM.PhoneNumber)></GridColumn>
+                <GridColumn Field=@nameof(ClientInfoVM.Email)></GridColumn>
+                <GridColumn Field=@nameof(ClientInfoVM.Address)></GridColumn>
+                <GridCommandColumn Width="200px">
+                    <GridCommandButton Command="Edit" Icon="@SvgIcon.Pencil" ThemeColor="@ThemeConstants.Button.ThemeColor.Primary">Edit</GridCommandButton>
+                    <GridCommandButton Command="Delete" Icon="@SvgIcon.Trash">Delete</GridCommandButton>
+                </GridCommandColumn>
+            </GridColumns>
+        </TelerikGrid>
+    </TelerikRootComponent>
+
+    <div>
+        @MessageResult
+    </div>
+
+
+
+
