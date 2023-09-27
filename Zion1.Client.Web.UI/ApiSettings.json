@@ -1,0 +1,33 @@
+{
+  //"BaseUrl": "https://hoangdinh.homeip.net/zion1.client.api/",
+  "BaseUrl": "https://localhost:7197/",
+  "ApiResources": [
+    {
+      "Name": "GetClientList",
+      "Resource": "api/client",
+      "Method": "Get",
+      "CacheTime": 10
+    },
+    {
+      "Name": "GetClient",
+      "Resource": "api/client/{clientId}",
+      "Method": "Get",
+      "CacheTime": 10
+    },
+    {
+      "Name": "CreateClient",
+      "Resource": "api/client",
+      "Method": "Post"
+    },
+    {
+      "Name": "UpdateClient",
+      "Resource": "api/client",
+      "Method": "Put"
+    },
+    {
+      "Name": "DeleteClient",
+      "Resource": "api/client/{clientId}",
+      "Method": "Delete"
+    }
+  ]
+}
