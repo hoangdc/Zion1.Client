@@ -9,8 +9,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Zion1.Client.Web.Client\Zion1.Client.Web.Client.csproj" />
     <ProjectReference Include="..\Zion1.Client.Web.UI\Zion1.Client.Web.UI.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0-rc.1.23421.29" />
-    <PackageReference Include="Telerik.UI.for.Blazor" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0-rc.2.23480.2" />
+    <PackageReference Include="Telerik.UI.for.Blazor" Version="4.6.0" />
   </ItemGroup>
 
 </Project>
