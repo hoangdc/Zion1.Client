@@ -8,11 +8,9 @@ namespace Zion1.Client.Web.Share.Components
     {
         public List<ClientInfoVM> ClientList { get; set; } = [];
         
-
-        protected override async Task OnInitAsync()
+        protected override async Task OnInitializedAsync()
         {
             await GetClientList();
-            await base.OnInitAsync();
         }
 
         private async Task GetClientList()
