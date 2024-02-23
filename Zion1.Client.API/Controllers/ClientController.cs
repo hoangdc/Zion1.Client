@@ -13,6 +13,20 @@ namespace Zion1.Client.API.Controllers
     [ApiController]
     public class ClientController : CoreController
     {
+        [HttpGet]
+        public async Task<IReadOnlyList<ClientInfo>> GetClientList()
+        {
+            return await Mediator.Send(new GetClientListQuery());
+        }
+
+        [HttpGet]
+        [Route("{clientId}")]
+        public async Task<ClientInfo> GetClient(int clientId)
+        {
+            return await Mediator.Send(new GetClientQuery(clientId));
+
+        }
+
         [HttpPost]
         public async Task<ActionResult<int>> CreateClient(CreateClientRequest clientInfo)
         {
@@ -37,24 +51,16 @@ namespace Zion1.Client.API.Controllers
         }
 
         [HttpDelete]
+        public async Task<int> DeleteClient(DeleteClientRequest clientInfo)
+        {
+            return await Mediator.Send(new DeleteClientRequest(clientInfo.ClientId));
+        }
+
+        [HttpDelete]
         [Route("{clientId}")]
-        public async Task<int> DeleteClient(int clientId)
+        public async Task<int> DeleteClientById(int clientId)
         {
             return await Mediator.Send(new DeleteClientRequest(clientId));
-        }
-
-        [HttpGet]
-        public async Task<IReadOnlyList<ClientInfo>> GetClientList()
-        {
-            return await Mediator.Send(new GetClientListQuery());
-        }
-
-        [HttpGet]
-        [Route("{clientId}")]
-        public async Task<ClientInfo> GetClient(int clientId)
-        {
-            return await Mediator.Send(new GetClientQuery(clientId));
-            
         }
     }
 }

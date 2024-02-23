@@ -5,12 +5,9 @@ using Zion1.Client.Application.Commands.CreateClient;
 using Zion1.Client.Application.Commands.DeleteClient;
 using Zion1.Client.Application.Commands.UpdateClient;
 using Zion1.Client.Application.Contracts;
+using Zion1.Client.Application.Queries;
 using Zion1.Client.Infrastructure.Persistence;
 using Zion1.Client.Infrastructure.Persistence.Repositories;
-using Zion1.Client.Application.Queries;
-using Zion1.Common.Application.Contracts;
-using Zion1.Common.Infrastructure.Persistence.Repositories;
-using Zion1.Client.Domain.Entities;
 
 namespace Zion1.Client.Infrastructure
 {

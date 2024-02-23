@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Components\_backup\**" />
+    <Content Remove="Components\_backup\**" />
+    <EmbeddedResource Remove="Components\_backup\**" />
+    <None Remove="Components\_backup\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ApiSettingService.cs" />
+    <Compile Remove="Components\ManageClient - Copy.razor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="ApiSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\ManageClient.razor - Copy.cs.bak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ApiSettings.json" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="Telerik.UI.for.Blazor" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Zion1.Common\Zion1.Common.Components\Zion1.Common.Components.csproj" />
+    <ProjectReference Include="..\..\Zion1.Common\Zion1.Common.Helper\Zion1.Common.Helper.csproj" />
+    <ProjectReference Include="..\Zion1.Client.Application\Zion1.Client.Application.csproj" />
+  </ItemGroup>
+
+</Project>

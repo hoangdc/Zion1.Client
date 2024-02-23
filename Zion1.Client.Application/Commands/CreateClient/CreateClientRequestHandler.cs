@@ -18,7 +18,7 @@ namespace Zion1.Client.Application.Commands.CreateClient
             var clientInfo = ClientMapper.Mapper.Map<ClientInfo>(request);
             if (clientInfo is null)
             {
-                throw new ApplicationException("Issue with mapper");
+                throw new ApplicationException("Client not found");
             }
             var newClientInfo = await _clientCommandRepository.AddAsync(clientInfo);
             return newClientInfo.ClientId;

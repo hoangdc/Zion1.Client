@@ -16,7 +16,7 @@ namespace Zion1.Client.Application.Commands.DeleteClient
             var clientInfo = await _clientCommandRepository.GetByIdAsync(request.ClientId);
             if (clientInfo is null)
             {
-                throw new ApplicationException("Issue with mapper");
+                throw new ApplicationException("Client not found");
             }
             var newClientInfo = await _clientCommandRepository.DeleteAsync(clientInfo);
             return newClientInfo.ClientId;
