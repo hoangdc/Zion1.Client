@@ -1,10 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
+using ZiggyCreatures.Caching.Fusion;
 using Zion1.Client.Application.Commands.CreateClient;
 using Zion1.Client.Application.Commands.DeleteClient;
 using Zion1.Client.Application.Commands.UpdateClient;
 using Zion1.Client.Application.Queries;
 using Zion1.Client.Domain.Entities;
-using Zion1.Common.API.Controller;
+using Zion1.Common.Api.Controller;
+using Zion1.Common.Helper.Cache;
 
 namespace Zion1.Client.API.Controllers
 {
@@ -13,11 +16,27 @@ namespace Zion1.Client.API.Controllers
     [ApiController]
     public class ClientController : CoreController
     {
+        public ClientController(IFusionCache cache) 
+        { 
+            CacheData = cache;
+        }
+
         [HttpGet]
         public async Task<IReadOnlyList<ClientInfo>> GetClientList()
         {
-            return await Mediator.Send(new GetClientListQuery());
+            //return await CacheData.GetOrSetAsync(
+            //    $"{Assembly.GetExecutingAssembly().GetName().Name}_ClientList_All",
+            //    _ => Mediator.Send(new GetClientListQuery()),
+            //    options => options.SetDuration(TimeSpan.FromMinutes(10))
+            //    );
+
+            return await CacheService.CacheData.GetOrSetAsync(
+                $"{Assembly.GetExecutingAssembly().GetName().Name}_ClientList_All",
+                _ => Mediator.Send(new GetClientListQuery()),
+                options => options.SetDuration(TimeSpan.FromMinutes(10))
+                );
         }
+        
 
         [HttpGet]
         [Route("{clientId}")]

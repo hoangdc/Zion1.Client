@@ -1,5 +1,5 @@
-using Microsoft.Net.Http.Headers;
 using Zion1.Client.Infrastructure;
+using Zion1.Common.Helper.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +12,10 @@ builder.Services.AddSwaggerGen();
 
 //Register Client Service
 builder.Services.AddClientService(builder.Configuration);
+
+//Add Cache Service
+builder.Services.AddCacheService();
+
 
 var app = builder.Build();
 

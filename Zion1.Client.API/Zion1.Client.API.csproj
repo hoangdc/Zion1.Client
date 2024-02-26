@@ -14,10 +14,11 @@
     </PackageReference>
     <PackageReference Include="RestSharp" Version="110.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="Zion1.Common.API" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Zion1.Common\Zion1.Common.Api\Zion1.Common.Api.csproj" />
+    <ProjectReference Include="..\..\Zion1.Common\Zion1.Common.Helper\Zion1.Common.Helper.csproj" />
     <ProjectReference Include="..\Zion1.Client.Application\Zion1.Client.Application.csproj" />
     <ProjectReference Include="..\Zion1.Client.Infrastructure\Zion1.Client.Infrastructure.csproj" />
   </ItemGroup>

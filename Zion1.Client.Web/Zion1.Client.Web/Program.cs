@@ -1,5 +1,6 @@
 using Zion1.Client.Web.Components;
 using Zion1.Common.Helper.Api;
+using Zion1.Common.Helper.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +9,13 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
+//Add Cache Service
+builder.Services.AddCacheService();
+
 // Add Api Settings for ApiConsumer
 await builder.Services.AddApiSettings();
+
+
 
 var app = builder.Build();
 
