@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System.Reflection;
 using ZiggyCreatures.Caching.Fusion;
 using Zion1.Client.Application.Commands.CreateClient;
@@ -16,10 +17,10 @@ namespace Zion1.Client.API.Controllers
     [ApiController]
     public class ClientController : CoreController
     {
-        public ClientController(IFusionCache cache) 
-        { 
-            CacheData = cache;
-        }
+        //public ClientController(IFusionCache cache) 
+        //{ 
+        //    CacheData = cache;
+        //}
 
         [HttpGet]
         public async Task<IReadOnlyList<ClientInfo>> GetClientList()
@@ -30,11 +31,15 @@ namespace Zion1.Client.API.Controllers
             //    options => options.SetDuration(TimeSpan.FromMinutes(10))
             //    );
 
-            return await CacheService.CacheData.GetOrSetAsync(
+            var result = await CacheService.CacheData.GetOrSetAsync(
                 $"{Assembly.GetExecutingAssembly().GetName().Name}_ClientList_All",
                 _ => Mediator.Send(new GetClientListQuery()),
                 options => options.SetDuration(TimeSpan.FromMinutes(10))
                 );
+
+            Log.Information("Response - {@result}", result);
+
+            return result;
         }
         
 
