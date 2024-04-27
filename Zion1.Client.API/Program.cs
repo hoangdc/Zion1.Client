@@ -1,7 +1,7 @@
 using Zion1.Client.Infrastructure;
-using Zion1.Common.Helper.Logger;
+//using Zion1.Common.Helper.Logger;
 using Zion1.Common.Helper.Cache;
-using Serilog;
+//using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 
 //Add Log Service
-builder.AddLogService(builder.Configuration);
+//uilder.AddLogService(builder.Configuration);
 
 
 //Add Cache Service
@@ -35,7 +35,7 @@ var app = builder.Build();
 
 
 //Enable Serilog request tracking
-app.UseSerilogRequestLogging();
+//app.UseSerilogRequestLogging();
 
 //Cors
 app.UseCors(policy =>

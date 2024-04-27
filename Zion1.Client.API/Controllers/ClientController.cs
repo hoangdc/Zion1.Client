@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Serilog;
+//using Serilog;
 using System.Reflection;
 using ZiggyCreatures.Caching.Fusion;
 using Zion1.Client.Application.Commands.CreateClient;
 using Zion1.Client.Application.Commands.DeleteClient;
 using Zion1.Client.Application.Commands.UpdateClient;
+using Zion1.Client.Application.Notifications;
 using Zion1.Client.Application.Queries;
 using Zion1.Client.Domain.Entities;
 using Zion1.Common.Api.Controller;
@@ -25,6 +26,9 @@ namespace Zion1.Client.API.Controllers
         [HttpGet]
         public async Task<IReadOnlyList<ClientInfo>> GetClientList()
         {
+            return await Mediator.Send(new GetClientListQuery());
+
+
             //return await CacheData.GetOrSetAsync(
             //    $"{Assembly.GetExecutingAssembly().GetName().Name}_ClientList_All",
             //    _ => Mediator.Send(new GetClientListQuery()),
@@ -37,7 +41,7 @@ namespace Zion1.Client.API.Controllers
                 options => options.SetDuration(TimeSpan.FromMinutes(10))
                 );
 
-            Log.Information("Response - {@result}", result);
+            //Log.Information("Response - {@result}", result);
 
             return result;
         }
@@ -59,10 +63,19 @@ namespace Zion1.Client.API.Controllers
 
             if (result.IsValid)
             {
-                return await Mediator.Send(clientInfo);
+                var response = await Mediator.Send(clientInfo);
+
+                //Send notifications: Email and SMS after creating client successfully.  
+                Task.Run(() => Mediator.Publish(new ClientCreatedNotification() { ClientId = response }));
+                
+
+                return response;
             }
-            var errorMessages = result.Errors.Select(x => x.ErrorMessage).ToList();
-            return BadRequest(errorMessages);
+            else
+            {
+                var errorMessages = result.Errors.Select(x => x.ErrorMessage).ToList();
+                return BadRequest(errorMessages);
+            }
         }
 
         [HttpPut]
